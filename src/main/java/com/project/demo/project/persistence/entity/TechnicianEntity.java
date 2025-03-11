@@ -26,7 +26,7 @@ public class TechnicianEntity {
     @Column(name = "id_technician", nullable = false)
     private Integer idTechnician;
 
-    @Column(name = "name", length = 30, nullable = false)
+    @Column(name = "name", length = 300, nullable = false)
     private String name;
 
     @OneToMany(mappedBy = "technician", cascade = CascadeType.ALL, orphanRemoval = true)
